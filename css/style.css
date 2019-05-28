@@ -1,3 +1,7 @@
 #name {
     font-family: 'Pacifico', cursive;
 }
+
+body {
+    scroll-behavior: smooth;
+}

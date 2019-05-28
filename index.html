@@ -14,14 +14,36 @@
 </head>
 
 <body>
+    <nav id="navbar" class="flex items-center justify-between flex-wrap bg-gray-500 p-6 hidden md:inline-flex md:w-screen">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <span id="name" class="font-semibold text-xl tracking-tight">Vaibhav Vijay</span>
+        </div>
+        <div class="w-full block flex-grow md:w-auto flex justify-end">
+            <div>
+                <a href="#about-me" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4">
+                    About Me</a>
+                <a href="#portfolio" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4">
+                    Portfolio</a>
+                <a href="#experience" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4">
+                    Experience</a>
+                <a href="#tech" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white mr-4">
+                    Tech</a>
+                <a href="#education" class="block mt-4 md:inline-block md:mt-0 text-white hover:text-white">
+                    Education</a>
+            </div>
+        </div>
+    </nav>
+
     <div class="flex flex-col content-center w-full h-screen bg-gray-500 text-center">
-        <p id="name" class="text-left p-8 text-2xl">Vaibhav Vijay</p>
-        <div class="self-center w-40 h-40 rounded-full bg-blue-500"></div>
+        <p id="name" class="text-left p-8 text-2xl md:invisible">Vaibhav Vijay</p>
+        <div class="self-center w-40 h-40 rounded-full bg-blue-500">
+            <img src="images/myPhoto.jpg" class="rounded-full" />
+        </div>
         <hr>
         <h1 class="text-5xl">Vaibhav Vijay</h1>
         <h2 class="text-2xl">Full Stack Developer</h2>
     </div>
-    <div class="w-full bg-gray-400 h-auto text-center">
+    <div id="about-me" class="w-full bg-gray-400 h-auto text-center">
         <h2 class="py-16 text-3xl">ABOUT ME</h2>
         <p class="px-8 pb-16 md:px-20">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
@@ -29,7 +51,7 @@
             publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
     </div>
-    <div class="w-full h-auto bg-gray-500 text-center p-4">
+    <div id="portfolio" class="w-full h-auto bg-gray-500 text-center p-4">
         <h2 class="font-semibold text-xl py-4">PORTFOLIO</h2>
         <div class="flex flex-wrap">
             <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white my-2 md:w-1/3 md:mx-2">
@@ -79,7 +101,7 @@
             </div>
         </div>
     </div>
-    <div class="w-auto bg-gray-700 h-auto text-center md:content-center py-12 px-6">
+    <div id="experience" class="w-auto bg-gray-700 h-auto text-center md:content-center py-12 px-6">
         <h2 class="font-semibold text-xl">EXPERIENCE</h2>
         <div class="md:w-1/2 md:mx-auto">
             <p class="m-2">Where I have worked.</p>
@@ -103,7 +125,7 @@
             </div>
         </div>
     </div>
-    <div class="w-full bg-gray-400 h-auto text-center md:content-center py-12 px-6">
+    <div id="tech" class="w-full bg-gray-400 h-auto text-center md:content-center py-12 px-6">
         <h2 class="font-semibold text-xl">TECH</h2>
         <div class="md:w-1/2 md:mx-auto">
             <p class="m-2">Technologies I like working with.</p>
@@ -116,7 +138,7 @@
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">JavaScrpit</span>
         </div>
     </div>
-    <div class="w-auto bg-gray-700 h-auto text-center md:content-center py-12 px-6">
+    <div id="education" class="w-auto bg-gray-700 h-auto text-center md:content-center py-12 px-6">
         <h2 class="font-semibold text-xl">EDUCATION</h2>
         <div class="md:w-1/2 md:mx-auto">
             <p class="m-2">Education I have received.</p>
