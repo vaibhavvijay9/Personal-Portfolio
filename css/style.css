@@ -5,3 +5,9 @@
 body {
     scroll-behavior: smooth;
 }
+
+#experience,
+#education {
+    background-color: #292929;
+    color: white;
+}
