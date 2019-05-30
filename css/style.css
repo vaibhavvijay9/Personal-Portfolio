@@ -11,6 +11,7 @@ body {
     display: none;
 }
 
+#welcome-section,
 #experience,
 #education {
     background-color: #292929;
