@@ -20,3 +20,15 @@ body {
     background-color: #292929;
     color: white;
 }
+
+.cover {
+    background: url(../images/cover_mobile.jpg) no-repeat center center fixed;
+    background-size: cover; 
+ }
+
+@media (min-width: 768px){
+    .cover {
+       background: url(../images/cover.jpg) no-repeat center center fixed; 
+       background-size: cover;
+    }
+}
